@@ -1,10 +1,13 @@
 import './App.css'
+import Calendario from './components/Calendario'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
     <>
-      <h2>Associação Sul Catarinense de Karatê</h2>
+      <Hero />  
+      <Calendario />
     </>
   )
 }

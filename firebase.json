@@ -6,6 +6,7 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "site": "asc-karate",
     "frameworksBackend": {
       "region": "us-central1"
     }
