@@ -1,13 +1,19 @@
 import './App.css'
-import Calendario from './components/Calendario'
-import Hero from './components/Hero'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Home'
+import TestDemo from './components/DemoCalendar';
+import Calendario from './components/Calendario';
 
 function App() {
 
   return (
-    <>
-      <Hero /> 
-    </>
+  <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/demo" element={<TestDemo />} />
+          <Route path="/calendario" element={<Calendario /> } />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

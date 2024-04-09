@@ -9,8 +9,43 @@ h2 {
   justify-content: space-between;
 }
 
+.lema {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lema_frase {
+  display: flex;
+  flex-direction: column;
+}
+
+.lema_frase h2 {
+  color: rgb(238, 238, 165);
+  text-shadow: grey 1px 1px;
+  text-align: center;
+}
+
+.lema_frase legend {
+  margin-left: 190px;
+  font-size: larger;
+  color: rgb(238, 238, 165);
+  text-shadow: grey 1px 1px;
+  text-align: center;
+}
+
 .calendario {
   height: 50vh;
+}
+
+.hero {
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/karate_generico2.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
 }
 
 .hero_section {

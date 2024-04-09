@@ -4,10 +4,9 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,13 +26,6 @@ a:hover {
 body {
   margin: 0;
   min-width: 320px;
-  height: 100vh;
-  background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/karate_generico2.jpg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 h1 {

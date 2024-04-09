@@ -8,7 +8,7 @@ const link_2trocafaixa = 'https://drive.google.com/drive/folders/1e_7kJsvvhEIi6j
 
 const Hero = () => {
   return (
-    <section className='hero hero_section'>
+    <section className='hero section'>
       <div className='hero_text'> 
         <h2>ASC Karatê</h2>
         <div className='social'>
