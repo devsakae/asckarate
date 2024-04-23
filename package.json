@@ -10,11 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "firebase": "^10.11.0",
     "hero-slider": "^3.2.1",
+=======
+    "firebase": "^10.10.0",
+    "firebase-tools": "^13.7.1",
+>>>>>>> b270ec9b1f5c59cfcfb655701b43c2a5c9fa3bab
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1"
+    "react-google-calendar-api": "^2.3.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
