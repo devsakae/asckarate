@@ -1,14 +1,12 @@
-import React from 'react'
-import Hero from './components/Hero'
-import Lema from './components/Lema'
-import Kata from './components/Kata'
+import React from 'react';
+import Hero from './Components/Hero';
+import Kata from './Components/Kata'
+import User from './Components/User';
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Lema />
-      <Kata />
     </>
   )
 }
