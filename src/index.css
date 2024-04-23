@@ -66,3 +66,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.hero {
+  width: 98vw;
+  height: 100vh;
+}
+
+.karate_generico {
+  min-width: 90vw;
+  min-height: 800px;
+  background-image: url('karate_generico.jpg') ;
+}
