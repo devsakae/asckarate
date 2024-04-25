@@ -1,5 +1,5 @@
 import { FirebaseContext } from "./FirebaseContext"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GoogleAuthProvider, signOut, onAuthStateChanged, signInWithPopup } from "firebase/auth";
 
 export const FirebaseProvider = ({ children }) => {
