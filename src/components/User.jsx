@@ -16,12 +16,15 @@ const User = () => {
 
   return (
     <FirebaseProvider>
+      <div>
+
       Menu para usuários.
       <GoogleButton
         type='dark'
         label='Faça seu login'
         onClick={handleGoogleSignIn}
       />
+      </div>
     </FirebaseProvider>
   )
 }
