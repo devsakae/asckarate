@@ -1,21 +1,32 @@
 import { FirebaseContext } from "./FirebaseContext"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GoogleAuthProvider, signOut, onAuthStateChanged, signInWithPopup } from "firebase/auth";
+import { auth } from "./Firebase";
+import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 export const FirebaseProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-
-  const googleSignIn = async () => {
+  let navigate = useNavigate();
+  const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
-    await signInWithPopup(auth, provider)
-    .then(({ user }) => setUser(user))
+    signInWithPopup(auth, provider)
+    .then(({ user }) => {
+      setUser(user)
+      navigate("/") // add o redirecionamento para a home
+    })
   }
 
-  const googleSignOut = async () => signOut(auth);
-
+  const googleSignOut = async () => {
+    signOut(auth)
+   
+  };
+  
   useEffect(() => {
+    
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
+      // console.log(user);//console.log para ver o usuario logado no console
     });
     return () => {
       unsubscribe();
@@ -33,4 +44,8 @@ export const FirebaseProvider = ({ children }) => {
       {children}
     </FirebaseContext.Provider>
   )
+}
+
+FirebaseProvider.propTypes = {
+  children: PropTypes.node
 }
